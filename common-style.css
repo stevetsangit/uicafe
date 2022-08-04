@@ -44,7 +44,7 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 
 .banner-blue { grid-column:   1/13   ;		margin: 0;		padding: 0;		box-sizing: border-box;
 
-	background: rgb(28, 105, 212);		height: 400px;		padding: 52px;		text-align: left;		color: rgb(255, 255, 255);		border-radius: 6px;
+	background: rgb(0, 102, 61);		height: 400px;		padding: 52px;		text-align: left;		color: rgb(255, 255, 255);		border-radius: 8px;
 }
 
 	.banner-info {  width: 70%; }
@@ -57,7 +57,7 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 
 .banner-light-blue { grid-column:   1/13   ;		margin: 0;		padding: 0;		box-sizing: border-box;
 
-	background: rgb(28, 105, 212, .1);		height: 400px;		padding: 52px;		text-align: left;		color: rgb(38, 38, 38);		border-radius: 6px;
+	background: rgb(0, 102, 61, .1);		height: 400px;		padding: 52px;		text-align: left;		color: rgb(38, 38, 38);		border-radius: 8px;
 }
 
 
