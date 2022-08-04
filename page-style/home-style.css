@@ -119,7 +119,9 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 
 
 
-
+#footer { grid-column:   1/13   ; margin: 0; padding: 40px 0; box-sizing: border-box;
+	color: rgb(0,0,0,.4);
+}
 
 
 

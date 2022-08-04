@@ -98,6 +98,28 @@ h6 {
 	font-weight: 400;
 }
 
+
+/* ---------------------  F A Q  --------------------- */
+
+#faq {
+	position: fixed;
+	bottom: 24px; right: 24px;
+	font-size: 28px;
+	display: flex; justify-content: center; align-items: center;
+	height: 64px; width: 64px;
+	background: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 0, 0, 0);
+	border-radius: 100px;
+	box-shadow: 0 2px 20px rgb(0, 0, 0, .15);
+}
+
+	#faq:hover {
+		border: 2px solid rgb(0, 102, 61);
+		-webkit-transition-duration: 0.4]s;transition-duration: 0.4s;
+		cursor: pointer;
+		font-size: 32px;
+	}
+
 /* ---------------------  L I N K  --------------------- */
 
 a {list-style: none;}

@@ -1,0 +1,50 @@
+/*
+
+Theme Name: Components_APP2.0_Normative Guidelines
+
+Theme URI: Localization
+
+Author: Steve Tsang
+
+Author URI: https://stevezz.com/
+
+Description: 
+
+Requires at least: 1.0.1
+
+Requires PHP: 0.0.0
+
+Version: 1.0
+
+License: GNU General Public License v1 or later
+
+License URI: none
+
+Text Domain: design.bmw.com
+
+Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
+
+★★★  N O T E - Font Size  ★★★
+1.0em = 10px
+1.4em = 14px
+1.8em = 18px
+2.2em = 22px
+
+*/
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: system-ui, -apple-system, Helvetica, Arial;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	min-width: 960px;
+}
+
+
+#head {
+	font-size: 44px;
+}
