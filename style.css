@@ -379,3 +379,20 @@ a:active {color: rgb(0, 83, 45);}
 主内容的样式请从其它CSS文件中读取
 
 ------------ */
+
+
+/* ---------------------  F O O T E R  --------------------- */
+
+
+
+
+
+#footer { grid-column:   1/13   ; margin: 40px 0 0 0; padding: 40px 0; box-sizing: border-box;
+	color: rgb(0,0,0,.4);
+	font-size: 12px; line-height: 2;
+	border-top: .5px solid rgb(0, 0, 0, .1);
+}
+
+
+
+
