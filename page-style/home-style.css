@@ -57,14 +57,23 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 			}
 
 
-#sync-card { grid-column:   7/13   ; margin: 0; padding: 0; box-sizing: border-box;	
+#sync-card { grid-column:   1/7   ; margin: 0; padding: 0; box-sizing: border-box;	
 }
 
-#sync-card-2 { grid-column:   1/7   ; margin: 0; padding: 0; box-sizing: border-box;	
+#down-card { grid-column:   7/13   ; margin: 0; padding: 0; box-sizing: border-box;
 }
 
-#down-card { grid-column:   1/13   ; margin: 0; padding: 0; box-sizing: border-box;
+#figma-card { grid-column:   1/13   ; margin: 0; padding: 0; box-sizing: border-box;	
 }
+
+#materials-card-1 { grid-column:   1/7   ; margin: 0; padding: 0; box-sizing: border-box;
+}
+
+#materials-card-2 { grid-column:   7/13   ; margin: 0; padding: 0; box-sizing: border-box;
+}
+
+
+
 
 	.card-bg {
 		border: 2px solid rgb(0, 0, 0, .0);
@@ -86,6 +95,8 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 			justify-content: space-between;
 		}
 
+
+/* Card Style 1 */
 			.downsync-text {
 				margin: 0; padding: 0;
 			}
@@ -118,7 +129,7 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 				}
 
 
-
+/* Card Style 2 */
 
 
 
