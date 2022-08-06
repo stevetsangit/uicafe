@@ -1,22 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
-  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
     <title>UI Cafe 2.0</title>
-    <description>GOOD UI USE UICAFE.</description>
-    <link>...</link>
+    <description>The self-cultivation of a project UI</description>
     <image>
-        <url></url>
-        <title>UI Cafe 2.0</title>
-        <link>...</link>
+      <url></url>
+      <title>UI Cafe 2.0</title>
     </image>
     <generator>Sketch</generator>
-    <lastBuildDate>[UTC Time]</lastBuildDate>
-    <language>en</language>
     <item>
       <title>UI Cafe 2.0</title>
-      <pubDate>[UTC Time]</pubDate>
-      <enclosure url="https://www.uicafe.de/sketch/UICafe_Mobile_V2.sketch" sparkle:version="[V2.0.1]" length="..." type="application/octet-stream" />
+      <pubDate>Sat, 6 Aug 2022 11:19:04 +0000</pubDate>
+      <enclosure url="https://www.uicafe.de/sketch/UICafe_Mobile_V2.sketch" type="application/octet-stream" sparkle:version="2.0.1"/>
     </item>
   </channel>
 </rss>
