@@ -35,7 +35,9 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 */
 
 
+#start-use-info { grid-column:   1/13   ;}
 
+#other-materials-info { grid-column:   1/13   ;}
 
 
 #sync-card { grid-column:   1/7   ; margin: 0; padding: 0; box-sizing: border-box;	
@@ -59,7 +61,7 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 	.card-bg {
 		border: 2px solid rgb(0, 0, 0, .0);
 		background: rgb(0, 102, 61, .06);
-		border-radius: 8px;
+		border-radius: 20px;
 		-webkit-transition-duration: 0.4s;
 		transition-duration: 0.4s;
 	}

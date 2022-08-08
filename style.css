@@ -302,7 +302,7 @@ a:active {color: rgb(0, 83, 45);}
 			margin: 0 auto;
 			padding: 40px 8px;
 			flex-wrap: nowrap;
-			line-height: 36px;
+			line-height: 40px;
 
 		}
 
@@ -327,8 +327,8 @@ a:active {color: rgb(0, 83, 45);}
 
 				.menu-lv1 li:hover {
 					color: #262626;
-					background: rgb(0, 102, 61, .06);
-					border-radius: 8px;
+					background: rgb(0, 102, 61, .1);
+					border-radius: 100px;
 					-webkit-transition-duration: 0.4s;transition-duration: 0.4s;
 				}
 
@@ -341,8 +341,8 @@ a:active {color: rgb(0, 83, 45);}
 
 
 		#menu-selected {
-			background: rgb(0, 102, 61, .06);
-			border-radius: 8px;
+			background: rgb(0, 102, 61, .1);
+			border-radius: 100px;
 			color: rgb(0, 0, 0);
 			font-weight: 400;
 		}
