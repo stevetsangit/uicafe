@@ -30,7 +30,7 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 1.8em = 18px
 2.2em = 22px
 
-------------  H O M E  ------------
+------------  N A V I G A T I O N   B A R S  ------------
 
 */
 
@@ -42,3 +42,10 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 					
 }
 
+
+
+
+#overview-info {grid-column:   1/4   ; margin: 0; padding: 0; box-sizing: border-box;
+	width: 100%;
+	margin: 100px 0 20px 0;
+}
