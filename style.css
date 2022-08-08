@@ -98,6 +98,16 @@ h6 {
 	font-weight: 400;
 }
 
+/* ---------------------  C O L O R S  --------------------- */
+
+.color_primary { color: rgb(0,102,61); }
+.color_secondary {color: rgb(0,83,45);}
+.color_black {color: rgb(0, 0, 0);}
+.color_white {color: rgb(255, 255, 255);}
+.color_warning {color: rgb(255,57,57);}
+.color_success {color: rgb(0,176,106);}
+.color_link {color: rgb(0,133,255);}
+.color_lighlight {color: rgb(255,153,0);}
 
 /* ---------------------  F A Q  --------------------- */
 
@@ -111,11 +121,12 @@ h6 {
 	border: 2px solid rgb(0, 0, 0, 0);
 	border-radius: 100px;
 	box-shadow: 0 2px 20px rgb(0, 0, 0, .15);
+	-webkit-transition-duration: 0.4s;transition-duration: 0.4s;
 }
 
 	#faq:hover {
 		border: 2px solid rgb(0, 102, 61);
-		-webkit-transition-duration: 0.4]s;transition-duration: 0.4s;
+		-webkit-transition-duration: 0.4s;transition-duration: 0.4s;
 		cursor: pointer;
 		font-size: 32px;
 	}
@@ -311,6 +322,7 @@ a:active {color: rgb(0, 83, 45);}
 
 				.menu-lv1 a,li {
 					color: rgb(0, 0, 0);
+					-webkit-transition-duration: 0.4s;transition-duration: 0.4s;
 				}
 
 				.menu-lv1 li:hover {
