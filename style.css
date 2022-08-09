@@ -148,7 +148,7 @@ a:active {color: rgb(0, 83, 45);}
 		height: 70px;
 		max-height: 70px;
 		min-height: 70px;
-		padding: 0px 24px;
+		padding: 0px 26px;
 		margin: 0 auto;
 		overflow:hidden;
 		z-index: 999;
@@ -252,7 +252,7 @@ a:active {color: rgb(0, 83, 45);}
 			/* ------  Title  ------ */
 
 			#nav button {
-				padding: 0px 16px;
+				padding: 0px 20px;
 				height: 36px;
 				margin-left: 24px;
 				font-size: 15px;
@@ -312,7 +312,7 @@ a:active {color: rgb(0, 83, 45);}
 			}
 
 			.menu-lv1-name {
-				padding: 0 16px;
+				padding: 0 20px;
 				color: rgb(0, 102, 61);
 				font-size: 12px;
 				font-weight: 600;
@@ -327,21 +327,21 @@ a:active {color: rgb(0, 83, 45);}
 
 				.menu-lv1 li:hover {
 					color: #262626;
-					background: rgb(0, 102, 61, .1);
+					background: rgb(0, 0, 0, .06);
 					border-radius: 100px;
 					-webkit-transition-duration: 0.4s;transition-duration: 0.4s;
 				}
 
 
 				.menu-lv2 {
-					padding: 0 16px;
+					padding: 0 20px;
 					font-size: 16px;
 					font-weight: 300;
 				}
 
 
 		#menu-selected {
-			background: rgb(0, 102, 61, .1);
+			background: rgb(0, 0, 0, .06);
 			border-radius: 100px;
 			color: rgb(0, 0, 0);
 			font-weight: 400;
