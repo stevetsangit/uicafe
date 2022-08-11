@@ -224,7 +224,7 @@ a:active {color: rgb(0, 83, 45);}
 
 
 
-		/* ------------  right  ------------ */
+		/* ------------  Right  ------------ */
 
 		#nav{
 			height: 100%;
@@ -247,9 +247,12 @@ a:active {color: rgb(0, 83, 45);}
 				color: #aaa;
 			}
 
+			.head-info a{color: #aaa;}
+			.head-info a:hover {color: rgb(0, 0, 0);}
 
 
-			/* ------  Title  ------ */
+
+			/* ------  Button  ------ */
 
 			#nav button {
 				padding: 0px 20px;
