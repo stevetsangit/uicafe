@@ -1,118 +1,152 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--适配移动显示-->
+<meta name="viewport"
+	content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--适配移动显示-->
+
 <head>
 	<title>Navigation Bars - UI CAFE 2.0 - The self-cultivation of a project UI</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, viewport-fit=cover"> <!--适配iPhone底部条-->
+	<meta name="viewport" content="width=device-width, viewport-fit=cover">
+	<!--适配iPhone底部条-->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="icon" type="image/x-icon" sizes="16x16 32x32 128x128" href="favicon.ico">
 
-	<link rel="stylesheet" type="text/css" href="style.css"><!--主框架样式表-->
-	<link rel="stylesheet" type="text/css" href="common-style.css"><!--通用组件样式表-->
-	<link rel="stylesheet" type="text/css" href="page-style/nav-bar-style.css"><!--当前页面主内容（Content）的样式表-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--主框架样式表-->
+	<link rel="stylesheet" type="text/css" href="common-style.css">
+	<!--通用组件样式表-->
+	<link rel="stylesheet" type="text/css" href="page-style/nav-bar-style.css">
+	<!--当前页面主内容（Content）的样式表-->
 
 	<script src="script.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
 </head>
+
 <body>
 
-  	<!--FAQ - Start-->
-<div id="faq" onclick="window.open('faq/faq.html')">🍩</div>
+	<!--FAQ - Start-->
+	<div id="faq" onclick="window.open('faq/faq.html')">🍩</div>
 
 
 
-		<div id="head">
-			<div id="brand">
-				<div id="logo" onclick="window.location.href='index.html'">
-					<!--logo-->
-					<svg viewBox="0 0 44 44">
-					    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-					        <path d="M29.5,8 C37.5081289,8 44,14.4918711 44,22.5 C44,30.5081289 37.5081289,37 29.5,37 L29.5,37 L14.5,37 C6.49187113,37 0,30.5081289 0,22.5 C0,14.4918711 6.49187113,8 14.5,8 L14.5,8 Z M29.5,12 L14.5,12 C8.70101013,12 4,16.7010101 4,22.5 C4,28.2989899 8.70101013,33 14.5,33 L14.5,33 L29.5,33 C35.2989899,33 40,28.2989899 40,22.5 C40,16.7010101 35.2989899,12 29.5,12 L29.5,12 Z M29.5,15 C33.6421356,15 37,18.3578644 37,22.5 C37,26.6421356 33.6421356,30 29.5,30 C25.3578644,30 22,26.6421356 22,22.5 C22,18.3578644 25.3578644,15 29.5,15 Z M29.5,19 C27.5670034,19 26,20.5670034 26,22.5 C26,24.4329966 27.5670034,26 29.5,26 C31.4329966,26 33,24.4329966 33,22.5 C33,20.5670034 31.4329966,19 29.5,19 Z" id="logo" fill="#00663D" fill-rule="nonzero"></path>
-					    </g>
-					</svg>
+	<div id="head">
+		<div id="brand">
+			<div id="logo" onclick="window.location.href='index.html'">
+				<!--logo-->
+				<svg viewBox="0 0 44 44">
+					<g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<path
+							d="M29.5,8 C37.5081289,8 44,14.4918711 44,22.5 C44,30.5081289 37.5081289,37 29.5,37 L29.5,37 L14.5,37 C6.49187113,37 0,30.5081289 0,22.5 C0,14.4918711 6.49187113,8 14.5,8 L14.5,8 Z M29.5,12 L14.5,12 C8.70101013,12 4,16.7010101 4,22.5 C4,28.2989899 8.70101013,33 14.5,33 L14.5,33 L29.5,33 C35.2989899,33 40,28.2989899 40,22.5 C40,16.7010101 35.2989899,12 29.5,12 L29.5,12 Z M29.5,15 C33.6421356,15 37,18.3578644 37,22.5 C37,26.6421356 33.6421356,30 29.5,30 C25.3578644,30 22,26.6421356 22,22.5 C22,18.3578644 25.3578644,15 29.5,15 Z M29.5,19 C27.5670034,19 26,20.5670034 26,22.5 C26,24.4329966 27.5670034,26 29.5,26 C31.4329966,26 33,24.4329966 33,22.5 C33,20.5670034 31.4329966,19 29.5,19 Z"
+							id="logo" fill="#00663D" fill-rule="nonzero"></path>
+					</g>
+				</svg>
 
-				</div>
-				<div id="title"><a href="index.html">UI CAFE 2.0</a></div>
-				<!--隐藏（CSS还未注释)<div id="s-title"><p>APP</p></div> -->
 			</div>
-			<div id="nav">
-				
-				<div class="head-info">Version: 2.0.1</div>
-				<div class="head-info">By <a href="https://steve.closepx.com/" target="_blank">Steve</a></div>
-				<button onclick="var myName = prompt('Enter your E-mail')">Subscribe for updates</button>
-			</div>
-			
+			<div id="title"><a href="index.html">UI CAFE 2.0</a></div>
+			<!--隐藏（CSS还未注释)<div id="s-title"><p>APP</p></div> -->
+		</div>
+		<div id="nav">
+
+			<div class="head-info">Version: 2.0.1</div>
+			<div class="head-info">By <a href="https://steve.closepx.com/" target="_blank">Steve</a></div>
+			<button onclick="var myName = prompt('Enter your E-mail')">Subscribe for updates</button>
 		</div>
 
-		<div id="main">
+	</div>
 
-			<div id="menu">
+	<div id="main">
 
-				<div class="menu-lv1">
-					<a href="index.html" ><li class="menu-lv2">Get Started</li></a>
-				</div>
+		<div id="menu">
 
-				<div class="div-line"></div> 
-
-				<div class="menu-lv1"><div class="menu-lv1-name">Bars</div>
-					<a href="nav-bar.html"><li class="menu-lv2" id="menu-selected">Navigation Bars</li></a><!-- 当前页面的选中菜单 -->
-					<a href="tab-bar.html"><li class="menu-lv2">Tab Bars</li></a>
-					<a href="tool-bar.html"><li class="menu-lv2">Tool Bars</li></a>
-					<a href="search-bar.html"><li class="menu-lv2">Search Bars</li></a>
-				</div>
-
-				<div class="div-line"></div> 
-
-				<div class="menu-lv1"><div class="menu-lv1-name">Elements</div>
-					<a href="buttons.html"><li class="menu-lv2">Buttons</li></a>
-					<a href="tags.html"><li class="menu-lv2">Tags</li></a>
-					<a href="avatar.html"><li class="menu-lv2">Avatar</li></a>
-					<a href="background.html"><li class="menu-lv2">Background</li></a>
-				</div>
-
+			<div class="menu-lv1">
+				<a href="index.html">
+					<li class="menu-lv2">Get Started</li>
+				</a>
 			</div>
 
-			<div id="right">
-				<div id="content"><!--本页的主要内容-->
+			<div class="div-line"></div>
 
+			<div class="menu-lv1">
+				<div class="menu-lv1-name">Bars</div>
+				<a href="nav-bar.html">
+					<li class="menu-lv2" id="menu-selected">Navigation Bars</li>
+				</a><!-- 当前页面的选中菜单 -->
+				<a href="tab-bar.html">
+					<li class="menu-lv2">Tab Bars</li>
+				</a>
+				<a href="tool-bar.html">
+					<li class="menu-lv2">Tool Bars</li>
+				</a>
+				<a href="search-bar.html">
+					<li class="menu-lv2">Search Bars</li>
+				</a>
+			</div>
 
-	<!--从这里开始-->
+			<div class="div-line"></div>
 
-<dl class="container">
+			<div class="menu-lv1">
+				<div class="menu-lv1-name">Elements</div>
+				<a href="buttons.html">
+					<li class="menu-lv2">Buttons</li>
+				</a>
+				<a href="tags.html">
+					<li class="menu-lv2">Tags</li>
+				</a>
+				<a href="avatar.html">
+					<li class="menu-lv2">Avatar</li>
+				</a>
+				<a href="background.html">
+					<li class="menu-lv2">Background</li>
+				</a>
+			</div>
 
-	<dd class="banner-light-blue">
-		<div class="banner-info">
-			<h1>Navigation Bars</h1>
-			<h6>This specification is mainly used by visual designers to design and use B-end projects.</h6>
 		</div>
-	</dd>
-	
 
-	<dd id="overview-info" class="use-info">
-		<h4>Overview</h4>
-		<h6>Design apps quickly and accurately by using Sketch, Photoshop, and XD templates, guides, and other resources.</h6>
-	</dd>
+		<div id="right">
+			<div id="content">
+				<!--本页的主要内容-->
 
 
+				<!--从这里开始-->
+
+				<dl class="container">
+
+					<dd class="banner-light-blue">
+						<div class="banner-info">
+							<h1>Navigation Bars</h1>
+							<h6>This specification is mainly used by visual designers to design and use B-end projects.
+							</h6>
+						</div>
+					</dd>
+
+
+					<dd id="overview-info" class="use-info">
+						<h4>Overview</h4>
+						<h6>Design apps quickly and accurately by using Sketch, Photoshop, and XD templates, guides, and
+							other resources.</h6>
+					</dd>
 
 
 
 
-			<!--Footer-Start-->
-	<dd id="footer">Copyright © 2022 UICafe.de All rights reserved.</dd>
-
-</dl>
 
 
+					<!--Footer-Start-->
+					<dd id="footer">Copyright © 2022 UICafe.de All rights reserved.</dd>
+
+				</dl>
 
 
 
-<!--到这里结束-->
-				</div>
+
+
+				<!--到这里结束-->
+			</div>
 
 		</div>
 </body>
+
 </html>
