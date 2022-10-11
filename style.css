@@ -32,6 +32,10 @@ Tags: Guidelines, BMW, Components, Sketch, Design, Sketch Symbols, APP, Symbols
 
 */
 
+@font-face {
+	font-family: satoshi;
+	src: url(fonts/Satoshi-Variable.ttf);
+}
 
 
 body {
