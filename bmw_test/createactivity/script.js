@@ -1,4 +1,8 @@
-
+// Get the element with id="defaultOpen" and click on it
+window.onload = function(){
+  document.getElementById("defaulttab").click();
+  }
+  
   function openCity(evt, cityName) {
 
     // Declare all variables
@@ -21,6 +25,3 @@
     evt.currentTarget.className += " active";
 
   }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaulttab").click();
