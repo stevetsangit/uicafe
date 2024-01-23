@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Community System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-btns.css">
+    <link rel="stylesheet" type="text/css" href="style-form.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script-tabs.js"></script>
+</head>
+
+<body>
+
+    <div class="head">Community System</div>
+    <div class="box">
+        <div class="menu">
+            <ul id="menuList">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="page-content">
+
+            <div class="page-top">
+                <div class="page-title">
+                    <div class="page-name">List style example</div>
+                    <button class="btn-primary">Create content</button>
+                </div>
+
+                <div class="tabs">
+                    <button class="tablinks" onclick="openCity(event, 'taba')" id="defaulttab">Activity management</button>
+                    <button class="tablinks" onclick="openCity(event, 'tabb')">Comment management</button>
+                    <button class="tablinks" onclick="openCity(event, 'tabc')">Other management</button>
+                </div>
+            </div>
+
+            <div class="page-main-content">
+
+                <div id="taba" class="tabcontent">
+                    <iframe src="tab1.html" width="100%" height="100%"></iframe>
+                </div>
+                
+                <div id="tabb" class="tabcontent">
+                    <iframe src="tab2.html" width="100%" height="100%"></iframe>
+                </div>
+                
+                <div id="tabc" class="tabcontent">
+                    <iframe src="tab3.html" width="100%" height="100%"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
