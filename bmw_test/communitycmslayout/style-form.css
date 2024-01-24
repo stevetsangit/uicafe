@@ -66,3 +66,26 @@
         height: 16px;
     }
 }
+
+.selectbox {
+    display: flex;
+    padding: 0px 8px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--Border-corners--default-, 4px);
+    border: 1px solid var(--Line-default, rgba(0, 0, 0, 0.15));
+    background: var(--Background-block, rgba(255, 255, 255, 0.80));
+    
+    /* BG Blur */
+    backdrop-filter: blur(50px);
+    color: var(--text-ico-ns-tips-default, rgba(0, 0, 0, 0.85));
+
+    /* Regular [ 400 ]/r-default- */
+    font-family: "SF Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
