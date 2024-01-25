@@ -21,6 +21,8 @@ function openCity(evt, tabs) {
 
 }
 
+
+
 // Get the element with id="defaultOpen" and click on it
 window.onload = function(){
 document.getElementById("defaulttab").click();

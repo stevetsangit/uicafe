@@ -23,6 +23,7 @@
 
 .btn-primary:hover {
     background: var(--Background-Button-primary_hover, #0B63D6);
+    cursor: pointer;
 }
 
 
@@ -50,6 +51,7 @@
 
 .btn-ghost:hover {
     background: var(--Background-Button-default_hover, rgba(0, 0, 0, 0.06));
+    cursor: pointer;
 }
 
 /* Second */
@@ -77,6 +79,7 @@
 
 .btn-second:hover {
     background: var(--Background-Button-second_hover, rgba(0, 0, 0, 0.95));
+    cursor: pointer;
 }
 
 
@@ -105,4 +108,5 @@
 
 .btn-default:hover {
     background: var(--Background-Button-default_hover, rgba(0, 0, 0, 0.06));
+    cursor: pointer;
 }

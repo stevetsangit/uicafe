@@ -341,3 +341,16 @@ iframe {
             #page-count-select {
                 flex: 0;
             }
+
+
+
+/* 弹窗隐藏 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
