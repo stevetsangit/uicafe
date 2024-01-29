@@ -129,6 +129,11 @@ p {
                     color: rgba(0, 0, 0, 0.5);
                     cursor: pointer;
                     box-sizing: border-box;
+
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 142.857% */
                 }
 
             .tablinks:hover {

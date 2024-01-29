@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    background: var(--BG-Lightgray);
+    color: var(--General-Normal);
+    font-size: var(--Font-Normal);
+    line-height: var(--Font-Normal-line-height);
+    font-family: "SF Pro",Helvetica, Arial, sans-serif;
+}
+
+
+
+:root {
+    /* Color-text */
+    --General-Normal: rgba(0, 0, 0, 0.85);
+    --BG-Lightgray: rgba(245, 245, 245, 1);
+    --General-Paratext: rgba(0, 0, 0, 0.6);
+    /* Form */
+    --general-default-input-box:rgba(0, 0, 0, 0.30);
+    /* Buttons */
+    --btn-Primary-Colors-Normal: rgba(10, 76, 245, 1);
+    --btn-Primary-Colors-Hover: #003DDB;
+    --btn-Primary-Colors-Disabled: rgba(10, 76, 245, 0.20);
+    --Border-Normal:rgba(0, 0, 0, 0.10);
+    --btn-hover: rgba(0, 0, 0, 0.06);
+    /* border */
+    --Divider-Normal:rgba(0, 0, 0, 0.10);
+    --Border-Normal:rgba(0, 0, 0, 0.10);
+    /* Backbround */
+    --BG-Normal: rgba(255, 255, 255, 1);
+    --BG-Kind-Tips:rgba(0, 0, 0, 0.08);
+    --BG-Hover: rgba(0, 0, 0, 0.06);
+    --BG-On-Lightgray: rgba(255, 255, 255, 1);
+}
+
+:root {
+    /* Font Size */
+    font-size: 15px;
+    --Font-Normal: 1rem;
+}
+
+:root {
+    /* Font line-height */
+    --Font-Normal-line-height: 1.2rem;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.13333rem;
+    font-style: normal;
+    line-height: 2.53333rem;
+}
+h2 {
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 2rem;
+}
+h3 {
+    font-size: 1.33333rem;
+    font-style: normal;
+    line-height: 1.6rem;
+}
+h4 {
+    font-size: 1.06667rem;
+    font-style: normal;
+    line-height: 1.33333rem;
+}
+h5 {
+    font-size: 0.93333rem;
+    font-style: normal;
+    line-height: 1.2rem;
+}
+h6 {
+    font-size: 0.8rem;
+    font-style: normal;
+    line-height: 1.06667rem;
+}
+
+p {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.06667rem;
+    color: var(--General-Paratext);
+    padding: 0;
+    margin: 0;
+}

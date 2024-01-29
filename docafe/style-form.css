@@ -1,0 +1,15 @@
+input {
+    color: var(--general-default-input-box);
+}
+
+.head input {
+    display: flex;
+    width: 250px;
+    height: 36px;
+    padding: 0px 12px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--BG-Kind-Tips);
+    border: none;
+} 
