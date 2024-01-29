@@ -23,7 +23,7 @@
     gap: 6px;
 }
 
-.searchbox a {
+.searchbox p {
     color: var(--text-ico-ns-default, rgba(0, 0, 0, 0.85));
 
     /* Regular [ 400 ]/r-s- */

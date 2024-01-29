@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style-btns.css">
     <link rel="stylesheet" type="text/css" href="style-form.css">
+    <link rel="stylesheet" type="text/css" href="style-usercard.css">
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="script-tabs.js"></script>
 </head>
@@ -14,11 +15,11 @@
 
         <form action="" method="get" class="searchbox">
             <div class="search-form">
-                <label for="label1"><a>Title</a><input type="search" class="inputbox" name="label1"></label>
-                <label for="label2"><a>Title</a><input type="search" class="inputbox" name="label2" ></label>
-                <label for="label3"><a>Title</a><input type="search" class="inputbox" name="label3"></label>
-                <label for="label4"><a>Title</a><input type="search" class="inputbox" name="label4"></label>
-                <label for="label5"><a>Title</a><input type="search" class="inputbox" name="label5"></label>
+                <label for="label1"><p>Title</P><input type="search" class="inputbox" name="label1"></label>
+                <label for="label2"><p>Title</P><input type="search" class="inputbox" name="label2" ></label>
+                <label for="label3"><p>Title</P><input type="search" class="inputbox" name="label3"></label>
+                <label for="label4"><p>Title</P><input type="search" class="inputbox" name="label4"></label>
+                <label for="label5"><p>Title</P><input type="search" class="inputbox" name="label5"></label>
                 <button class="btn-ghost">More Search</button>
             </div>
             <button type="submit" class="btn-second" id="searchbtn" value="Search">
@@ -37,6 +38,91 @@
             </button>
         </form>
 
-        Tab 2: Not data yet.
+        <!-- 评论卡片 Start -->
+        <div class="user-comment">
+
+            <div class="user-comment-top">
+                <div class="user-comment-top-left"><p>Comment ID:</p><p>335445</p>-<p>Release date:</p><p>2023-10-28 11:09:32</p></div>
+                <div class="user-comment-top-right"><p>Posted on</p><a href="#">For over 100 years, we have been building cars that are known for their quality. But up to today, the crucial part of a BMW is not the motor, the chassis or the body: it’s the Freude of driving one.</a><p>ID:</p><p>6453264</p></div>
+            </div>
+
+            <div class="user-comment-content">
+
+                <!-- 复选框 -->
+                <input type="checkbox" id="user-comment-card-checkbox" class="checkbox" >
+
+                <!-- 用户头像信息 Start -->
+                <div class="usercard-mini">
+                    <div class="avatar-mini">
+                    <div class="user-character">✪</div>  
+                    </div>
+                    <div class="userinfo-mini">
+                    <div class="userinforow-mini">
+                    <div class="username">Nana.K</div>
+                        <div class="usericon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16" fill="none">
+                <g clip-path="url(#clip0_388_2851)">
+                <path d="M0 1.5C0 0.671573 0.671573 0 1.5 0H30.5C31.3284 0 32 0.671573 32 1.5V14.5C32 15.3284 31.3284 16 30.5 16H1.5C0.671573 16 0 15.3284 0 14.5V1.5Z" fill="black"/>
+                <path d="M19 0H30.5C31.3284 0 32 0.671573 32 1.5V14.5C32 15.3284 31.3284 16 30.5 16H15.5L19 0Z" fill="#CCCCCC"/>
+                <path d="M8.81787 12L9.09912 10.4004H5.91162L7.03662 4.00195H5.11475L3.70264 12H8.81787Z" fill="white"/>
+                <path d="M8.9184 5.74219L9.89105 12H12.059L15.1118 5.74219H13.143L11.3032 10.3594H11.2211L10.8754 5.74219H8.9184Z" fill="white"/>
+                <path d="M24.5698 12.1987C24.0184 12.1987 23.535 12.0985 23.1196 11.8979C22.7043 11.6974 22.3748 11.4253 22.1313 11.0815C21.8914 10.7342 21.7554 10.3457 21.7231 9.91602L21.7178 9.84082H23.1895L23.2002 9.87842C23.2396 10.0682 23.3201 10.2419 23.4419 10.3994C23.5672 10.5534 23.7266 10.6769 23.9199 10.77C24.1133 10.8595 24.3317 10.9043 24.5752 10.9043C24.8545 10.9043 25.0998 10.8434 25.311 10.7217C25.5223 10.5999 25.687 10.4334 25.8052 10.2222C25.9269 10.0073 25.9878 9.76204 25.9878 9.48633V9.47559C25.9878 9.19987 25.9269 8.95638 25.8052 8.74512C25.687 8.53385 25.5223 8.36914 25.311 8.25098C25.0998 8.13281 24.8563 8.07373 24.5806 8.07373C24.3872 8.07373 24.2082 8.10238 24.0435 8.15967C23.8787 8.21338 23.7301 8.29574 23.5977 8.40674C23.526 8.46403 23.458 8.53027 23.3936 8.60547C23.3327 8.67708 23.2808 8.75407 23.2378 8.83643H21.8467L22.2065 4.24951H27.0513V5.53857H23.4688L23.2754 7.74609H23.3721C23.4759 7.57064 23.6084 7.42025 23.7695 7.29492C23.9342 7.1696 24.1222 7.07292 24.3335 7.00488C24.5483 6.93685 24.7793 6.90283 25.0264 6.90283C25.5098 6.90283 25.9377 7.01204 26.3101 7.23047C26.686 7.44889 26.9797 7.74967 27.1909 8.13281C27.4058 8.51237 27.5132 8.94922 27.5132 9.44336V9.4541C27.5132 9.99837 27.3879 10.4764 27.1372 10.8882C26.8901 11.3 26.5446 11.6222 26.1006 11.855C25.6602 12.0841 25.1499 12.1987 24.5698 12.1987Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_388_2851">
+                <rect width="32" height="16" rx="1.5" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg></div>
+                        <div class="usericon"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="16" viewBox="0 0 31 16" fill="none">
+                <rect width="31" height="16" rx="2" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6831 12.0737C13.9168 12.0737 13.2544 11.909 12.6958 11.5796C12.1372 11.2466 11.7057 10.7757 11.4014 10.167C11.1006 9.55827 10.9502 8.83675 10.9502 8.00244V7.9917C10.9502 7.15381 11.1024 6.43229 11.4067 5.82715C11.7147 5.21842 12.1479 4.74935 12.7065 4.41992C13.2651 4.09049 13.924 3.92578 14.6831 3.92578C15.4458 3.92578 16.1047 4.09049 16.6597 4.41992C17.2183 4.74935 17.6497 5.21842 17.9541 5.82715C18.2585 6.43587 18.4106 7.15739 18.4106 7.9917V8.00244C18.4106 8.83675 18.2585 9.55827 17.9541 10.167C17.6533 10.7757 17.2236 11.2466 16.665 11.5796C16.1064 11.909 15.4458 12.0737 14.6831 12.0737ZM14.6831 10.6987C15.1021 10.6987 15.4673 10.5877 15.7788 10.3657C16.0903 10.1437 16.3302 9.8304 16.4985 9.42578C16.6704 9.02116 16.7563 8.54671 16.7563 8.00244V7.9917C16.7563 7.44385 16.6704 6.9694 16.4985 6.56836C16.3302 6.16374 16.0903 5.85221 15.7788 5.63379C15.4673 5.41178 15.1021 5.30078 14.6831 5.30078C14.2642 5.30078 13.8989 5.41178 13.5874 5.63379C13.2759 5.85221 13.0342 6.16374 12.8623 6.56836C12.6904 6.9694 12.6045 7.44385 12.6045 7.9917V8.00244C12.6045 8.54671 12.6886 9.02116 12.8569 9.42578C13.0288 9.8304 13.2687 10.1437 13.5767 10.3657C13.8882 10.5877 14.257 10.6987 14.6831 10.6987Z" fill="white"/>
+                <path d="M23.2446 12.0737C22.4963 12.0737 21.8499 11.909 21.3057 11.5796C20.7614 11.2502 20.3424 10.7811 20.0488 10.1724C19.7552 9.56364 19.6084 8.84033 19.6084 8.00244V7.9917C19.6084 7.15381 19.7552 6.4305 20.0488 5.82178C20.3424 5.21305 20.7596 4.74577 21.3003 4.41992C21.8446 4.09049 22.4927 3.92578 23.2446 3.92578C23.8569 3.92578 24.4066 4.04574 24.8936 4.28564C25.3841 4.52555 25.7798 4.85677 26.0806 5.2793C26.3813 5.70182 26.5568 6.18522 26.6069 6.72949V6.79932H25.0332L25.0278 6.76172C24.9741 6.47168 24.8649 6.21745 24.7002 5.99902C24.5355 5.77702 24.3278 5.60514 24.0771 5.4834C23.8301 5.36165 23.5526 5.30078 23.2446 5.30078C22.84 5.30078 22.4891 5.40999 22.1919 5.62842C21.8947 5.84326 21.6655 6.15299 21.5044 6.55762C21.3468 6.95866 21.2681 7.43669 21.2681 7.9917V8.00244C21.2681 8.55387 21.3468 9.0319 21.5044 9.43652C21.6655 9.84115 21.8947 10.1527 22.1919 10.3711C22.4891 10.5895 22.8418 10.6987 23.25 10.6987C23.5615 10.6987 23.839 10.6432 24.0825 10.5322C24.3296 10.4176 24.5337 10.2583 24.6948 10.0542C24.8595 9.84652 24.9688 9.60482 25.0225 9.3291L25.0332 9.28076H26.6123V9.34521C26.555 9.8859 26.3778 10.3604 26.0806 10.7686C25.7834 11.1768 25.3931 11.4972 24.9097 11.73C24.4263 11.9591 23.8713 12.0737 23.2446 12.0737Z" fill="white"/>
+                <path d="M5.62207 9.50746V11.8755H4V4.125H5.62207V7.60547H5.71875L8.58154 4.125H10.3862L7.56238 7.5188L10.585 11.8755H8.64062L6.39299 8.57895L5.62207 9.50746Z" fill="white"/>
+                </svg></div>
+                        </div>
+                    <div class="userinfo-2"><a>IP: Shenzhen</a></div>
+                    </div>
+                </div>
+                <!-- 用户头像信息 end -->
+
+                <!-- 评论内容框+Tag+Options -->
+                <div class="user-comment-content-right">
+
+                    <div class="user-comment-content-box">
+                        <p>Linkname User interface design is hard. With so many options to choose from regarding layout, spacing, typography, and colour, making design decisions can be overwhelming. <a href="#">#Topic#</a> <a href="#">1880002222</a></p>
+                        <div class="user-comment-content-img">
+                            <img src="https://i.pinimg.com/564x/9c/c7/40/9cc740c80469155c9b98bbb01d53f61f.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="user-comment-options">
+
+                        <div class="user-comment-option-left">
+                            <div class="tag-s-blue">tag1</div>
+                            <div class="tag-s-gold-bright">tag2</div>
+                            <div class="comments-data-likes">
+                                <button>3,346</button>
+                            </div>
+                            <div class="comments-data-comments">
+                                <button>1,321</button>
+                            </div>
+                        </div>
+
+                        <div class="user-comment-option-right">
+                            <a href="#">Pin</a>
+                            <a href="#">Rating</a>
+                            <a href="#">Reply</a>
+                            <a href="#">Review</a>
+                            <a href="#">Delete</a>
+                        </div>
+
+                    </div>
+
+                </div>
+    
+            </div>
+
+        </div>
+
     </div>
 </body>

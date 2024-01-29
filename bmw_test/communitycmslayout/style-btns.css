@@ -110,3 +110,26 @@
     background: var(--Background-Button-default_hover, rgba(0, 0, 0, 0.06));
     cursor: pointer;
 }
+
+
+a {
+    color: var(--text-ico-ns-link-default, #1973E8);
+
+    /* Regular [ 400 ]/r-default- */
+    font-family: "SF Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: var(--primary-secondary-hover, #0B63D6);
+    font-family: "SF Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    text-decoration-line: underline;
+}
