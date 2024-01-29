@@ -1,14 +1,15 @@
 /* Left */
     .nav {
         display: flex;
-        width: 320px;
+        Max-width: 320px;
         flex-direction: column;
         align-items: flex-start;
-        flex-shrink: 0;
+        /* flex-shrink: 0; */
         align-self: stretch;
         border-right: 1px solid var(--Divider-Normal);
         background-color: var(--BG-Normal);
         box-sizing: border-box;
+        height: 100%;
     }
 
         .logo {
@@ -23,24 +24,13 @@
             font-style: normal;
             font-weight: 700;
             line-height: 1.06667rem;
+            text-transform: lowercase;
+            cursor: pointer;
         }
 
         .logo svg {
             padding: 0;
             margin: 0;
-        }
-
-        .brand, .title {
-            color: var(--General-Normal, rgba(0, 0, 0, 0.85));
-            font-family: "SF Pro";
-            font-size: 1.06667rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.06667rem; /* 100% */
-            text-decoration: none;
-            padding: 0;
-            margin: 0;
-            text-transform: lowercase;
         }
 
         .nav-items {
@@ -87,6 +77,7 @@
                 gap: 12px;
                 align-self: stretch;
                 list-style-type: disc;
+                cursor: pointer;
             }
             .nav-item:hover {
                 background: var(--BG-Hover);
@@ -121,6 +112,7 @@
 
         .head {
             display: flex;
+            flex-shrink: 0;
             height: 64px;
             padding: 0px 36px;
             align-items: center;
@@ -168,6 +160,8 @@
             gap: 52px;
             flex: 1 0 0;
             align-self: stretch;
+            overflow: hidden;
+            overflow: scroll;
         }
 
             .content-dashboard {
@@ -225,6 +219,7 @@
                     gap: 20px;
                     align-self: stretch;
                     flex-wrap: wrap;
+                    min-width: 754px;
                 }
 
                     .content-recent-card {
@@ -237,6 +232,7 @@
                         overflow: hidden;
                         box-sizing: border-box;
                         transition: all 0.3s ease-in-out;
+                        cursor: pointer;
                     }
 
                         .content-recent-card:hover {
