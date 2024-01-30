@@ -145,7 +145,6 @@
                     background: var(--Border-Click);
                 }
                 .avatar img {
-                    flex: 1 0 0;
                     align-self: stretch;
                     border-radius: 100px;
                     border: 2px solid var(--General-Contrast);
