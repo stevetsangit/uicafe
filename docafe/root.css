@@ -19,6 +19,7 @@ html, body {
     --General-Normal: rgba(0, 0, 0, 0.85);
     --BG-Lightgray: rgba(245, 245, 245, 1);
     --General-Paratext: rgba(0, 0, 0, 0.6);
+    --General-Kind-Tips: rgba(0, 0, 0, 0.50);
     /* Form */
     --general-default-input-box:rgba(0, 0, 0, 0.30);
     /* Buttons */
@@ -30,6 +31,8 @@ html, body {
     /* border */
     --Divider-Normal:rgba(0, 0, 0, 0.10);
     --Border-Normal:rgba(0, 0, 0, 0.10);
+    --General-Contrast:rgba(255, 255, 255, 0.90);
+    --Border-Click:rgba(0, 0, 0, 0.30);
     /* Backbround */
     --BG-Normal: rgba(255, 255, 255, 1);
     --BG-Kind-Tips:rgba(0, 0, 0, 0.08);
