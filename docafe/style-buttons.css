@@ -59,6 +59,7 @@
     border-radius: 100px;
     background: var(--Border-Normal);
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 .avatar:hover {
     background: var(--Border-Click);

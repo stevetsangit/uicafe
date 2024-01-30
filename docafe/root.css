@@ -10,6 +10,7 @@ html, body {
     font-size: var(--Font-Normal);
     line-height: var(--Font-Normal-line-height);
     font-family: "SF Pro",Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 
