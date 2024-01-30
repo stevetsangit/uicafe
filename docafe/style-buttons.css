@@ -11,6 +11,7 @@
 }
 .btn-primary:hover {
     background-color: var(--btn-Primary-Colors-Hover);
+    cursor: pointer;
 }
 
 .btn-default{
@@ -27,6 +28,7 @@
 }
 .btn-default:hover {
     background-color: var(--btn-hover);
+    cursor: pointer;
 }
 
 .btn-ghost{
@@ -44,4 +46,5 @@
 
 .btn-ghost:hover {
     background-color: var(--btn-hover);
+    cursor: pointer;
 }
