@@ -1,19 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     var anchorPointsList = document.getElementById("anchor-points-list");
-    var currentOl; // 用于跟踪当前的有序列表
-    var currentLevel = 1; // 用于跟踪当前的标题层级
+    var currentOl;
+    var currentLevel = 1;
 
-    // 遍历文章中的标题和子标题
     var headings = document.querySelectorAll("h1, h2, h3");
-    headings.forEach(function (heading) {
+    headings.forEach(function (heading, index) {
         var listItem = document.createElement("li");
         var link = document.createElement("a");
 
-        // 设置链接的文本和 href 属性
         link.textContent = heading.textContent;
         link.href = "#" + heading.id;
 
-        // 判断标题层级
         var level;
         switch (heading.tagName.toLowerCase()) {
             case "h1":
@@ -29,12 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 level = 1;
         }
 
-        // 调整当前的标题层级
         if (level > currentLevel) {
-            // 新建有序列表
             currentOl = document.createElement("ol");
 
-            // 如果有上级标题，找到其最后一个子项并添加到其中
             if (anchorPointsList.lastElementChild) {
                 var parentLi = anchorPointsList.lastElementChild;
                 if (parentLi.tagName.toLowerCase() === "li") {
@@ -42,25 +36,82 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         } else if (level < currentLevel) {
-            // 上级标题，回到相应层级
             for (var i = level; i < currentLevel; i++) {
                 if (currentOl && currentOl.parentElement) {
-                    currentOl = currentOl.parentElement.parentElement; // 回到上一级的有序列表
+                    currentOl = currentOl.parentElement.parentElement;
                 }
             }
         }
 
-        currentLevel = level; // 更新当前的标题层级
+        currentLevel = level;
 
-        // 将链接添加到列表项中
         listItem.appendChild(link);
 
-        // 将列表项添加到当前的有序列表中
         if (currentOl) {
             currentOl.appendChild(listItem);
         } else {
-            // 如果没有当前的有序列表，直接添加到目录中
             anchorPointsList.appendChild(listItem);
+        }
+
+        if (index === 0) {
+            link.classList.add("selected");
+            heading.classList.add("linked-heading");
+        }
+
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            var allLinks = anchorPointsList.querySelectorAll("a");
+            allLinks.forEach(function (link) {
+                link.classList.remove("selected");
+            });
+
+            var allHeadings = document.querySelectorAll(".linked-heading");
+            allHeadings.forEach(function (h) {
+                h.classList.remove("linked-heading");
+            });
+
+            link.classList.add("selected");
+
+            var targetElement = document.getElementById(heading.id);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+
+            heading.classList.add("linked-heading");
+        });
+    });
+
+    window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        var closestHeading;
+        headings.forEach(function (heading) {
+            var headingOffset = heading.offsetTop;
+            if (!closestHeading || Math.abs(headingOffset - scrollPosition) < Math.abs(closestHeading.offsetTop - scrollPosition)) {
+                closestHeading = heading;
+            }
+        });
+
+        var closestLink = document.querySelector('a[href="#' + closestHeading.id + '"]');
+
+        var allLinks = anchorPointsList.querySelectorAll("a");
+        allLinks.forEach(function (link) {
+            link.classList.remove("selected");
+        });
+
+        var allHeadings = document.querySelectorAll(".linked-heading");
+        allHeadings.forEach(function (h) {
+            h.classList.remove("linked-heading");
+        });
+
+        if (closestLink) {
+            closestLink.classList.add("selected");
+        }
+
+        if (closestHeading) {
+            closestHeading.classList.add("linked-heading");
         }
     });
 });

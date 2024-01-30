@@ -21,6 +21,7 @@ html, body {
     --BG-Lightgray: rgba(245, 245, 245, 1);
     --General-Paratext: rgba(0, 0, 0, 0.6);
     --General-Kind-Tips: rgba(0, 0, 0, 0.50);
+    --General-Primary-Colors-Normal:rgba(10, 76, 245, 1);
     /* Form */
     --general-default-input-box:rgba(0, 0, 0, 0.30);
     /* Buttons */
@@ -50,6 +51,21 @@ html, body {
 :root {
     /* Font line-height */
     --Font-Normal-line-height: 1.2rem;
+}
+
+:root {
+    /* space */
+    --space-xxxs: 4px;
+    --space-xxs: 8px;
+    --space-xs: 12px;
+    --space-s: 16px;
+    --space-default: 20px;
+    --space-m: 24px;
+    --space-l: 28px;
+    --space-xl: 32px;
+    --space-xll: 36px;
+    --space-xlll: 40px;
+    --space-xllll: 52px;
 }
 
 

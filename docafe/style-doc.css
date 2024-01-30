@@ -5,16 +5,15 @@ html, body {
     height: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 52px;
 }
 
 .doc-head {
     display: flex;
     width: 100%;
-    height: 52px;
-    padding-right: 24px;
+    height: var(--space-xllll);
+    padding-right: var(--space-m);
     align-items: center;
-    gap: 24px;
+    gap: var(--space-m);
     flex-shrink: 0;
     box-sizing: border-box;
     border-bottom: 1px solid var(--Divider-Normal);
@@ -25,15 +24,15 @@ html, body {
     .doc-head-left {
         display: flex;
         align-items: center;
-        gap: 24px;
+        gap: var(--space-m);
         flex: 1 0 0;
         align-self: stretch;
     }
 
         .doclist-btn {
             display: flex;
-            width: 52px;
-            padding: 4px;
+            width: var(--space-xllll);
+            padding: var(--space-xxxs);
             justify-content: center;
             align-items: center;
             gap: 10px;
@@ -64,7 +63,7 @@ html, body {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 16px;
+        gap: var(--space-s);
         flex: 1 0 0;
         align-self: stretch;
     }
@@ -72,7 +71,7 @@ html, body {
         .doc-head-editorinfo {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: var(--space-xxxs);
         }
 
             .avatar-group {
@@ -89,7 +88,7 @@ html, body {
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                padding: 0 12px;
+                padding: 0 var(--space-xs);
             }
 
             .doc-head-btns {
@@ -105,31 +104,32 @@ html, body {
     align-self: stretch;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box;
 }
 
     .doc-catalog {
         display: flex;
         width: 240px;
-        height: 100%;
-        padding: 0px 0px 0px 24px;
+        padding: var(--space-xllll) 0px 0px var(--space-m);
         flex-direction: column;
         align-items: flex-start;
-        gap: 32px;
+        gap: var(--space-xll);
         overflow: scroll;
         position: absolute;
         left: 0;
         top: 0;
+        box-sizing: border-box;
     }
 
     .page-center {
         display: flex;
-        padding: 0px;
         justify-content: center;
         align-items: flex-start;
         flex: 1 0 0;
         align-self: stretch;
         overflow: scroll;
         box-sizing: border-box;
+        padding: var(--space-xllll) 264px;
     }
 
         .article-content {
@@ -137,25 +137,57 @@ html, body {
             max-width: 1072px;
             flex-direction: column;
             align-items: flex-start;
-            gap: 52px;
-            align-self: stretch;
-            padding: 0px 264px;
+            gap: var(--space-xs);
+            align-self: stretch
+            box-sizing: border-box;
+        }
+
+        .linked-heading {
+            color: var(--General-Primary-Colors-Normal);
+        }
+
+        .article-content h1,h2,h3,h4,h5,h6,p {
+            color: var(--General-Normal);
         }
 
     .anchor-points {
         display: flex;
         width: 240px;
         height: 100%;
-        padding: 0px 24px 0px 0px;
+        padding: var(--space-xllll) var(--space-m) 0px 0px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: var(--space-xs);
         align-self: stretch;
         overflow: scroll;
         position: absolute;
         right: 0;
         top: 0;
+        box-sizing: border-box;
     }
+
+        .anchor-points-title {
+            display: flex;
+            padding-left: 16px;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+        }
+
+            .anchor-points-title span {
+                display: flex;
+                padding-bottom: 12px;
+                align-items: flex-start;
+                align-self: stretch;
+                border-bottom: 1px solid var(--Divider-Normal);
+
+                color: var(--General-Kind-Tips);
+
+                font-size: 0.93333rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
 
     .anchor-points::-webkit-scrollbar, .doc-catalog::-webkit-scrollbar {
         display: none;
