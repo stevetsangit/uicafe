@@ -143,6 +143,7 @@
                 }
                 .avatar:hover {
                     background: var(--Border-Click);
+                    cursor: pointer;
                 }
                 .avatar img {
                     align-self: stretch;

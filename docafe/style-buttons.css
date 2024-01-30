@@ -48,3 +48,26 @@
     background-color: var(--btn-hover);
     cursor: pointer;
 }
+
+
+.avatar {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    padding: 2px;
+    align-items: flex-start;
+    border-radius: 100px;
+    background: var(--Border-Normal);
+    box-sizing: border-box;
+}
+.avatar:hover {
+    background: var(--Border-Click);
+    cursor: pointer;
+}
+.avatar img {
+    align-self: stretch;
+    border-radius: 100px;
+    border: 2px solid var(--General-Contrast);
+    width: 100%;
+    height: auto;
+}
