@@ -54,6 +54,10 @@ html, body {
             line-height: normal;
         }
 
+    .doc-head-logo {
+        cursor: pointer;
+    }
+
     .doc-head-right {
         display: flex;
         justify-content: flex-end;
