@@ -1,9 +1,10 @@
+// 文章的锚点交互
 document.addEventListener("DOMContentLoaded", function () {
     var anchorPointsList = document.getElementById("anchor-points-list");
     var currentOl;
     var currentLevel = 1;
 
-    var headings = document.querySelectorAll("h1, h2, h3");
+    var headings = document.querySelectorAll(".article-content h1, .article-content h2, .article-content h3");
     headings.forEach(function (heading, index) {
         var listItem = document.createElement("li");
         var link = document.createElement("a");
@@ -115,3 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+// other
+
+
