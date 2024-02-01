@@ -119,6 +119,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// other
+// Doc list Selected
 
+document.addEventListener("DOMContentLoaded", function () {
+    // 获取ID为doc-catalog-box-select的元素
+    var catalogBox = document.getElementById("doc-catalog-box-select");
 
+    // 获取所有的a标签
+    var allLinks = catalogBox.querySelectorAll('.doc-catalog-part-pages li a');
+
+    // 默认选中第一个a标签
+    var selectedLink = allLinks[0];
+    selectedLink.classList.add('selected');
+
+    // 添加点击事件监听
+    allLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            // 移除所有a标签的选中样式
+            allLinks.forEach(function(item) {
+                item.classList.remove('selected');
+            });
+            
+            // 给点击的a标签添加选中样式
+            link.classList.add('selected');
+        });
+    });
+});

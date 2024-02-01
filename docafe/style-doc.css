@@ -112,20 +112,6 @@ html, body {
     box-sizing: border-box;
 }
 
-    .doc-catalog {
-        display: flex;
-        width: 240px;
-        padding: var(--space-xllll) 0px 0px var(--space-m);
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--space-xll);
-        overflow: scroll;
-        position: absolute;
-        left: 0;
-        top: 0;
-        box-sizing: border-box;
-    }
-
     .page-center {
         display: flex;
         justify-content: center;
@@ -276,46 +262,3 @@ html, body {
             .article-content h1,h2,h3,h4,h5,h6,p {
                 color: var(--General-Normal);
             }
-
-    .anchor-points {
-        display: flex;
-        width: 240px;
-        height: 100%;
-        padding: var(--space-xllll) var(--space-m) 0px 0px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--space-xs);
-        align-self: stretch;
-        overflow: scroll;
-        position: absolute;
-        right: 0;
-        top: 0;
-        box-sizing: border-box;
-    }
-
-        .anchor-points-title {
-            display: flex;
-            padding-left: 16px;
-            flex-direction: column;
-            align-items: flex-start;
-            align-self: stretch;
-        }
-
-            .anchor-points-title span {
-                display: flex;
-                padding-bottom: 12px;
-                align-items: flex-start;
-                align-self: stretch;
-                border-bottom: 1px solid var(--Divider-Normal);
-
-                color: var(--General-Kind-Tips);
-
-                font-size: 0.93333rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-
-    .anchor-points::-webkit-scrollbar, .doc-catalog::-webkit-scrollbar {
-        display: none;
-    }

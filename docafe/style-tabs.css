@@ -1,59 +1,205 @@
+.anchor-points::-webkit-scrollbar, .doc-catalog::-webkit-scrollbar {
+    display: none;
+}
+
+/* Doc Pages List */
+.doc-catalog {
+    display: flex;
+    width: 240px;
+    height: 100%;
+    padding: var(--space-xllll) 0px var(--space-xllll) var(--space-m);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xll);
+    align-self: stretch;
+    overflow: scroll;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+    .doc-catalog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+        .doc-catalog-parent {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .doc-catalog-box ul,li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .doc-catalog-part-pages {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-bottom: 16px;
+        }
+
+            .doc-catalog-part-pages a {
+                display: flex;
+                padding: 8px 6px 8px 0px;
+                align-items: center;
+                gap: 8px;
+                align-self: stretch;
+                flex-shrink: 0;
+                font-size: 0.93333rem;
+                line-height: 1.06667rem;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .doc-catalog-part-pages a::before {
+                cursor: pointer;
+                content: url(imgs/doc-catalog-hovericon.svg);
+                width: 16px;
+                height: 16px;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .doc-catalog-part-pages a{
+                color: var(--General-Normal);
+                text-decoration: none;
+            }
+
+            .doc-catalog-part-pages a:hover {
+                cursor: pointer;
+            }
+
+            .doc-catalog-part-pages a:hover::before {
+                content: url(imgs/doc-catalog-hovericon.svg);
+                width: 16px;
+                height: 16px;
+                opacity: 1;
+                transition: scale 0.3s ease-in-out;
+            }
+
+            .doc-catalog-part-pages a.selected {
+                font-weight: 700;
+            }
+
+            .doc-catalog-part-pages a.selected::before{
+                content: url(imgs/doc-catalog-selectedicon.svg);
+                width: 16px;
+                height: 16px;
+                opacity: 1;
+                transition: scale 0.3s ease-in-out;
+            }
+
 
 
 
 /* Anchor Points */
-#anchor-points-list{
+.anchor-points {
     display: flex;
-    gap: 12px;
+    width: 240px;
+    height: 100%;
+    padding: var(--space-xllll) var(--space-m) var(--space-xllll) 0px;
     flex-direction: column;
     align-items: flex-start;
+    gap: var(--space-xs);
     align-self: stretch;
-
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#anchor-points-list li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    align-self: stretch;
-    
-    list-style-type: none;
-    margin: 0;
-}
-
-#anchor-points-list ol{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    align-self: stretch;
-    
-    list-style-type: none;
-    padding-left: 12px;
-}
-
-#anchor-points-list a {
-    text-decoration: none;
-    color: var(--General-Paratext);
-    padding-left: 12px;
+    overflow: scroll;
+    position: absolute;
+    right: 0;
+    top: 0;
     box-sizing: border-box;
-    transition: background-color 0.3s;
-    font-size: 0.93333rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.06667rem;
 }
 
-#anchor-points-list a:hover {
-    color: var(--General-Primary-Colors-Normal);
-}
+    .anchor-points-title {
+        display: flex;
+        padding-left: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
 
-#anchor-points-list .selected {
-    color: var(--General-Normal);
-    font-weight: 600;
-    box-shadow: 2px 0px 0px 0px var(--General-Normal) inset;
-}
+        .anchor-points-title span {
+            display: flex;
+            padding-bottom: 12px;
+            align-items: flex-start;
+            align-self: stretch;
+            border-bottom: 1px solid var(--Divider-Normal);
+
+            color: var(--General-Kind-Tips);
+
+            font-size: 0.93333rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        #anchor-points-list{
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #anchor-points-list li {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            align-self: stretch;
+            
+            list-style-type: none;
+            margin: 0;
+        }
+
+        #anchor-points-list ol{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            align-self: stretch;
+            
+            list-style-type: none;
+            padding-left: 12px;
+        }
+
+        #anchor-points-list a {
+            text-decoration: none;
+            color: var(--General-Paratext);
+            padding-left: 12px;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+            font-size: 0.93333rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.06667rem;
+        }
+
+        #anchor-points-list a:hover {
+            color: var(--General-Primary-Colors-Normal);
+        }
+
+        #anchor-points-list .selected {
+            color: var(--General-Normal);
+            font-weight: 600;
+            box-shadow: 2px 0px 0px 0px var(--General-Normal) inset;
+        }
